@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>登录失败</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<div class="col-md-8">  
+  <div class="panel panel-default">  
+
+<body>
+    <!-- 不存在则忽略，显示hello null!(可以通过默认值进行设置)-->
+    <p th:text="用户名或密码错误！">3333</p>
+    
+    
+    <p><a class="btn btn-primary btn-lg" th:href="@{/login}" role="button">重试</a></p>
+    
+    
+  </div>  
+</div>  
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</body>
+</html>
